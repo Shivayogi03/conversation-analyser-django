@@ -1,4 +1,4 @@
-# 🧠 Conversation-analyser-django/Post Conversation Analysis
+# 🧠 Conversation-analyser-django / Post Conversation Analysis
 
 This Django project analyzes chat conversations between users and AI agents. It provides:
 
