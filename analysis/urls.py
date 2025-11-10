@@ -1,6 +1,8 @@
 # analysis/urls.py
 from django.urls import path
 from . import views
+from analysis import views
+
 
 urlpatterns = [
     path('conversations/', views.upload_conversation, name='upload_conversation'),
