@@ -15,14 +15,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-# post_conversation_analysis/urls.py
 from django.urls import path, include
+from django.http import HttpResponse  # ✅ import this
+
+# ✅ Define the home view
+def home(request):
+    return HttpResponse("✅ Conversation Analyzer is running successfully on Render!")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('analysis.urls')),
-    path('', home),
+    path('api/', include('your_app.urls')),  # replace 'your_app' with your actual app name
+    path('', home),  # ✅ homepage route
 ]
 
 
