@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.http import HttpResponse  # ✅ import this
+from django.http import HttpResponse
+from your_app import views
+
 
 # ✅ Define the home view
 def home(request):
